@@ -1,5 +1,7 @@
 package com.javaex.ex08;
 
+import com.javaex.ex06.CConverter;
+
 public class Account {
 
     private String accountNo;
@@ -35,13 +37,20 @@ public class Account {
 	}
     
     
+    //
+	public static int money;
     
+	public static void setMoney(int money){
+        Account.money = money;
+    }
+	
 	
     //
-	
 	public void deposit(int d) {}
 	public void withdraw(int w) {}
-	public void showBalance() {}
+	public void showBalance() {
+		
+	}
 
     
 
