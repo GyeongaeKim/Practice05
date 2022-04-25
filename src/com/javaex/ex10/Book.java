@@ -9,13 +9,13 @@ public class Book {
     private int stateCode;  //상태코드
 	
     //생성자
-    public Book(int stateCode) {
-    	this.stateCode = 1;
-    }
-    public Book(int bookNo, String title, String author, int stateCode) {
+    public Book(){}
+        
+    public Book(int bookNo, String title, String author) {
 		this.bookNo = bookNo;
 		this.title = title;
 		this.author = author;
+		this.stateCode = 1;
 	}
 	
     
@@ -42,19 +42,30 @@ public class Book {
 	public void setAuthor(String author) {
 		this.author = author;
 	}
-    
+	public int getStateCode() {
+		return stateCode;
+	}
+	public void setStateCode(int stateCode) {
+		this.stateCode = stateCode;
+	
+	
+	
+	
     
 	
 	
+	
+	}
+
 	public void rent() {
-		if(stateCode==0) {
-			System.out.println(title+" 이(가) 대여 됐습니다.");
-		}
+		this.stateCode=0;
 	}
     
-	public void print() {
-		if(stateCode==0) {
-			System.out.println();
+	public String print() {
+		if(stateCode==1) {
+			return "재고있음";
+		}else {
+			return "재고없음";
 		}
 	}
     

@@ -2,6 +2,7 @@ package com.javaex.ex03;
 
 public class Song {
 	
+	//필드
 	private String title;
 	private String artist;
 	private String album;
@@ -10,7 +11,7 @@ public class Song {
 	private int track;
 	
 	
-
+	//생성자
 	public Song() {
 		System.out.println("Song(파라미터0개)");
 	}
@@ -29,6 +30,71 @@ public class Song {
 		this.track = track;
 		System.out.println("Song(파라미터6개)");
 	}
+
+	
+	
+	
+	
+	
+	//메소드 gs
+	public String getTitle() {
+		return title;
+	}
+	public String getArtist() {
+		return artist;
+	}
+	public String getAlbum() {
+		return album;
+	}
+	public String getComposer() {
+		return composer;
+	}
+	public String getYear() {
+		return year;
+	}
+	public int getTrack() {
+		return track;
+	}
+	public void setTitle(String title) {
+		this.title = title;
+	}
+	public void setArtist(String artist) {
+		this.artist = artist;
+	}
+	public void setAlbum(String album) {
+		this.album = album;
+	}
+	public void setComposer(String composer) {
+		this.composer = composer;
+	}
+	public void setYear(String year) {
+		this.year = year;
+	}
+	public void setTrack(int track) {
+		this.track = track;
+	}
+
+	
+	
+	
+	
+	
+	
+	@Override
+	public String toString() {
+		return "Song [title=" + title + ", artist=" + artist + ", album=" + album + ", composer=" + composer + ", year="
+				+ year + ", track=" + track + "]";
+	}
+
+	
+	
+	
+	
+	
+	
+	
+	
+	
 	
 	
 }

@@ -1,7 +1,5 @@
 package com.javaex.ex08;
 
-import com.javaex.ex06.CConverter;
-
 public class Account {
 
     private String accountNo;
@@ -11,11 +9,11 @@ public class Account {
     
     //생성자 작성
     public Account() {}
-    public Account(String accountNo) {}
-    public Account(int balance) {}
-    public Account(String accountNo, int balance) {
+    //public Account(String accountNo) {}
+    //public Account(int balance) {}
+    public Account(String accountNo) {
 		this.accountNo = accountNo;
-		this.balance = balance;
+		balance = 0;
 	}
     
     
@@ -37,19 +35,19 @@ public class Account {
 	}
     
     
-    //
-	public static int money;
     
-	public static void setMoney(int money){
-        Account.money = money;
-    }
-	
 	
     //
-	public void deposit(int d) {}
-	public void withdraw(int w) {}
+	public void deposit(int money) {
+		//
+		balance += money;
+	}
+	public void withdraw(int money) {
+		//
+		balance -= money;
+	}
 	public void showBalance() {
-		
+		System.out.println(balance);
 	}
 
     

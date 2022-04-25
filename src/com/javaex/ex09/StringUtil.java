@@ -1,36 +1,24 @@
 package com.javaex.ex09;
 
 public class StringUtil {
-    /*
-	public static String concatString() {
-    	//메소드 내용작성
-		}*/
-	
-	
+    
 	
 	//필드
-	String concatString;
-
-	
 	//생성자
-	public StringUtil(String concatString) {
-		this.concatString = concatString;
-	}
-
-
 	
-	//메소드
-	public String getConcatString() {
-		return concatString;
-	}
-	public void setConcatString(String concatString) {
-		this.concatString = concatString;
+	//메소드; String 배열 타입의 파라미터 -> (String[] strArray)
+	public static String concatString(String[] strArray) {
+		//메소드 내용작성
+		String result=("");
+		for(int i=0; i<strArray.length; i++) {
+			result+=strArray[i];
+		}
+		return result;
 	}
 	
 	
 	
-	public void concatString() {
-	}
+	
 	
 
 }
